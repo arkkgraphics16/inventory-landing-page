@@ -250,8 +250,8 @@ export default function Home() {
             <div className="text-5xl font-bold text-green-600 mb-2">₱99</div>
             <p className="text-gray-600 mb-6">per month</p>
             
-            <ul className="text-left space-y-2 mb-8">
-              <li className="flex items-center">
+<ul className="text-left space-y-2 mb-8 text-black">              
+  <li className="flex items-center">
                 <span className="text-green-500 mr-2">✓</span>
                 Unlimited inventory tracking
               </li>
