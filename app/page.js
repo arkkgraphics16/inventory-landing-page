@@ -65,7 +65,7 @@ export default function Home() {
   </h2>
   
   <div className="flex justify-center">
-    <div className="aspect-video w-full max-w-2xl rounded-xl overflow-hidden shadow-lg">
+<div className="w-full max-w-sm aspect-[9/16] rounded-xl overflow-hidden shadow-lg">
       <iframe
         src="https://www.youtube.com/embed/Z4zVLob1s0g"
         title="Saldo AI Demo"
@@ -144,7 +144,7 @@ export default function Home() {
   <div className="overflow-x-auto flex space-x-6 snap-x snap-mandatory pb-4">
     {["/images/mobile.jpg", "/images/ai1.jpg", "/images/ai2.jpg", "/images/ai3.jpg", "/images/dash.jpg"].map((src, idx) => (
       <div key={idx} className="flex-shrink-0 w-80 snap-center bg-white rounded-xl shadow-md overflow-hidden">
-        <img src={src} alt={`Saldo Screenshot ${idx + 1}`} className="w-full h-48 object-cover" />
+        <img src={src} alt={`Saldo Screenshot ${idx + 1}`} className="w-full aspect-[9/16] object-cover" />
         <div className="p-4 text-center">
           <p className="text-sm text-gray-600">
             {src.includes('mobile') && 'Mobile Interface'}
