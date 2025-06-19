@@ -124,7 +124,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white mb-2">AI Business Coach</h3>
-                    <p className="text-gray-200">May AI na magtuturo sa'yo kung paano pa mas lumaki ang kita mo. Parang may business consultant ka!</p>
+                    <p className="text-gray-200">May AI na magtuturo sa&apos;yo kung paano pa mas lumaki ang kita mo. Parang may business consultant ka!</p>
                   </div>
                 </div>
                 
@@ -191,8 +191,8 @@ export default function Home() {
             </div>
             <div className="text-yellow-500 mb-2">⭐⭐⭐⭐⭐</div>
             <p className="text-gray-700 italic">
-              "Grabe! Hindi ko alam na ganito pala kadami ang nawawala kong pera sa inventory. 
-              Ngayon nakita ko na ang tunay kong kita. Salamat NoteBuko!"
+              &quot;Grabe! Hindi ko alam na ganito pala kadami ang nawawala kong pera sa inventory. 
+              Ngayon nakita ko na ang tunay kong kita. Salamat NoteBuko!&quot;
             </p>
             <p className="text-green-600 font-bold mt-2">+₱15,000 monthly profit increase</p>
           </div>
@@ -209,8 +209,8 @@ export default function Home() {
             </div>
             <div className="text-yellow-500 mb-2">⭐⭐⭐⭐⭐</div>
             <p className="text-gray-700 italic">
-              "Dati 3 oras ako nag-compute sa Excel every night. Ngayon 5 minutes lang! 
-              Mas marami na akong time para sa family ko."
+              &quot;Dati 3 oras ako nag-compute sa Excel every night. Ngayon 5 minutes lang! 
+              Mas marami na akong time para sa family ko.&quot;
             </p>
             <p className="text-green-600 font-bold mt-2">3 hours saved daily</p>
           </div>
@@ -227,8 +227,8 @@ export default function Home() {
             </div>
             <div className="text-yellow-500 mb-2">⭐⭐⭐⭐⭐</div>
             <p className="text-gray-700 italic">
-              "Yung AI suggestions nila sobrang helpful! Natututo ako kung paano pa mas lumaki ang business ko. 
-              Parang may business mentor ako!"
+              &quot;Yung AI suggestions nila sobrang helpful! Natututo ako kung paano pa mas lumaki ang business ko. 
+              Parang may business mentor ako!&quot;
             </p>
             <p className="text-green-600 font-bold mt-2">2x revenue growth in 3 months</p>
           </div>
