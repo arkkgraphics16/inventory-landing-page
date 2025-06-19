@@ -1,4 +1,22 @@
+import { useRef } from 'react';
+
 export default function Home() {
+
+const carouselRef = useRef(null);
+  const slides = [
+    "/images/ai1.jpg",
+    "/images/ai2.jpg",
+    "/images/ai3.jpg",
+    "/images/mobile.jpg",
+    "/images/dash.jpg"
+  ];
+
+  const scroll = (direction) => {
+    const container = carouselRef.current;
+    const cardWidth = container.firstChild.getBoundingClientRect().width + 24; // includes gap
+    container.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+  };
+
   return (
     <div className="min-h-screen" style={{backgroundColor: '#FFF5EE'}}>
       {/* Hero Section */}
@@ -136,26 +154,49 @@ export default function Home() {
       </div>
 
       {/* Image Section */}
-      <div className="max-w-6xl mx-auto px-4 py-16">
-  <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
-    Saldo AI In Action
-  </h2>
+    <div className="max-w-6xl mx-auto px-4 py-16">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
+        Saldo AI In Action
+      </h2>
 
-  <div className="overflow-x-auto flex space-x-6 snap-x snap-mandatory pb-4">
-    {["/images/mobile.jpg", "/images/ai1.jpg", "/images/ai2.jpg", "/images/ai3.jpg", "/images/dash.jpg"].map((src, idx) => (
-      <div key={idx} className="flex-shrink-0 w-80 snap-center bg-white rounded-xl shadow-md overflow-hidden">
-        <img src={src} alt={`Saldo Screenshot ${idx + 1}`} className="w-full aspect-[9/16] object-cover" />
-        <div className="p-4 text-center">
-          <p className="text-sm text-gray-600">
-            {src.includes('mobile') && 'Mobile Interface'}
-            {src.includes('ai') && 'AI Insight Suggestion'}
-            {src.includes('dash') && 'Dashboard Overview'}
-          </p>
+      <div className="relative">
+        <button
+          onClick={() => scroll(-1)}
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100"
+        >
+          ◀️
+        </button>
+
+        <div
+          ref={carouselRef}
+          className="overflow-x-auto flex space-x-6 snap-x snap-mandatory pb-4 scrollbar-hide"
+        >
+          {slides.map((src, idx) => (
+            <div key={idx} className="flex-shrink-0 w-80 snap-center bg-white rounded-xl shadow-md overflow-hidden">
+              <img
+                src={src}
+                alt={`Saldo Screenshot ${idx + 1}`}
+                className="w-full aspect-[9/16] object-cover"
+              />
+              <div className="p-4 text-center">
+                <p className="text-sm text-gray-600">
+                  {src.includes('ai') ? 'AI Insight Suggestion'
+                    : src.includes('mobile') ? 'Mobile Interface'
+                    : 'Dashboard Overview'}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
+
+        <button
+          onClick={() => scroll(1)}
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100"
+        >
+          ▶️
+        </button>
       </div>
-    ))}
-  </div>
-</div>
+    </div>
 
 
  {/* Testimonials */}
