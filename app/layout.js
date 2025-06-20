@@ -30,6 +30,11 @@ export const metadata = {
       "5tk1pOobeh9IHII1v6VK-y3uyBNa9rN4KP0UFIIC3zQ",
       "JYz7WTQ10TUku6gbMJClFdLKbMyaeYLv1wIy9tAQm_k"
     ]
+  },
+   robots: {
+    index: true,
+    follow: true,
+    nocache: false
   }
 };
 
