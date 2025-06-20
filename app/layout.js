@@ -25,12 +25,13 @@ export const metadata = {
   authors: [
     { name: "Jezrel Phil Nacar" }
   ],
-  other: {
-    "google-site-verification": "5tk1pOobeh9IHII1v6VK-y3uyBNa9rN4KP0UFIIC3zQ",
-    "google-site-verification-2": "JYz7WTQ10TUku6gbMJClFdLKbMyaeYLv1wIy9tAQm_k"
+    verification: {
+    google: [
+      "5tk1pOobeh9IHII1v6VK-y3uyBNa9rN4KP0UFIIC3zQ",
+      "JYz7WTQ10TUku6gbMJClFdLKbMyaeYLv1wIy9tAQm_k"
+    ]
   }
 };
-
 
 export default function RootLayout({ children }) {
   return (
